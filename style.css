@@ -1,0 +1,835 @@
+/* 全局样式重置和基础设置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #FFFFFF;
+}
+
+/* 容器样式 */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Section 1: 首屏区域样式 */
+.hero-section {
+    background: linear-gradient(135deg, #0047AB 0%, #003d96 100%);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.hero-section h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+    opacity: 0.9;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 功能列表样式 */
+.feature-list {
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto 50px;
+    text-align: left;
+}
+
+.feature-list li {
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.feature-list li strong {
+    color: #FFD700;
+}
+
+/* CTA按钮样式 */
+.cta-button {
+    display: inline-block;
+    background-color: #FFD700;
+    color: #0047AB;
+    padding: 18px 40px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+.cta-button:hover {
+    background-color: #e6c200;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+}
+
+/* Section 2: Demo演示区域样式 */
+.demo-section {
+    padding: 100px 0;
+    background-color: #F5F5F5;
+    text-align: center;
+}
+
+.demo-section h2 {
+    font-size: 2.5rem;
+    color: #0047AB;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+
+/* Demo演示容器样式 */
+.demo-container {
+    max-width: 900px;
+    margin: 0 auto 40px;
+}
+
+/* LangExtract演示界面样式 */
+.langextract-demo {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* 高亮图例样式 */
+.highlights-legend {
+    background: #f8f9fa;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid #0047AB;
+}
+
+.legend-title {
+    font-weight: 600;
+    color: #333;
+    margin-right: 15px;
+}
+
+.legend-item {
+    display: inline-block;
+    padding: 4px 12px;
+    margin: 0 8px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.legend-item.character {
+    background-color: #e3f2fd;
+    color: #1976d2;
+    border: 1px solid #bbdefb;
+}
+
+.legend-item.emotion {
+    background-color: #fff3e0;
+    color: #f57c00;
+    border: 1px solid #ffcc02;
+}
+
+.legend-item.relationship {
+    background-color: #fce4ec;
+    color: #c2185b;
+    border: 1px solid #f8bbd9;
+}
+
+/* 提取信息显示样式 */
+.extraction-info {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid #FFD700;
+}
+
+.extraction-class {
+    font-weight: 600;
+    color: #0047AB;
+    margin-bottom: 8px;
+}
+
+.extraction-attributes {
+    color: #666;
+    line-height: 1.5;
+}
+
+.attr-key {
+    color: #1976d2;
+    font-weight: 500;
+}
+
+/* 文本内容区域样式 */
+.text-content {
+    background: #ffffff;
+    padding: 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* 高亮文本样式 */
+.character-highlight {
+    background-color: #e3f2fd;
+    color: #1976d2;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 500;
+    border: 1px solid #bbdefb;
+}
+
+.emotion-highlight {
+    background-color: #fff3e0;
+    color: #f57c00;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 500;
+    border: 1px solid #ffcc02;
+}
+
+.relationship-highlight {
+    background-color: #fce4ec;
+    color: #c2185b;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 500;
+    border: 1px solid #f8bbd9;
+    text-decoration: underline;
+    text-decoration-color: #c2185b;
+}
+
+/* 控制按钮样式 */
+.demo-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.control-btn {
+    background: #4285f4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.control-btn:hover {
+    background: #3367d6;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(66, 133, 244, 0.3);
+}
+
+.control-btn:active {
+    transform: translateY(0);
+}
+
+/* 进度条样式 */
+.progress-container {
+    text-align: center;
+}
+
+.progress-bar {
+    background: #e0e0e0;
+    height: 6px;
+    border-radius: 3px;
+    position: relative;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    background: linear-gradient(90deg, #4285f4 0%, #34a853 100%);
+    height: 100%;
+    width: 75%;
+    border-radius: 3px;
+    transition: width 0.3s ease;
+}
+
+.progress-indicator {
+    position: absolute;
+    top: -2px;
+    right: 25%;
+    width: 10px;
+    height: 10px;
+    background: #4285f4;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.progress-text {
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* 演示说明样式 */
+.demo-note {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    border-left: 4px solid #0047AB;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.demo-note strong {
+    color: #0047AB;
+}
+
+.highlight-word {
+    background-color: #fff3e0;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+.code-snippet {
+    background-color: #f5f5f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.9rem;
+    color: #d73a49;
+    border: 1px solid #e1e4e8;
+}
+
+/* 动画效果 */
+@keyframes highlightPulse {
+    0% { box-shadow: 0 0 0 0 rgba(66, 133, 244, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(66, 133, 244, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(66, 133, 244, 0); }
+}
+
+.relationship-highlight {
+    animation: highlightPulse 2s infinite;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .langextract-demo {
+        padding: 20px;
+        margin: 0 10px;
+    }
+    
+    .highlights-legend {
+        padding: 10px 12px;
+    }
+    
+    .legend-item {
+        display: block;
+        margin: 5px 0;
+        text-align: center;
+    }
+    
+    .demo-controls {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .control-btn {
+        justify-content: center;
+    }
+    
+    .text-content {
+        font-size: 1rem;
+        padding: 15px;
+    }
+    
+    .demo-note {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .demo-container {
+        margin: 0 auto 30px;
+    }
+    
+    .langextract-demo {
+        padding: 15px;
+    }
+    
+    .extraction-info {
+        padding: 12px;
+    }
+    
+    .text-content {
+        padding: 12px;
+        font-size: 0.95rem;
+    }
+    
+    .legend-title {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/* Demo说明文案样式 */
+.demo-description {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Section 3: 应用场景样式 */
+.use-cases-section {
+    padding: 100px 0;
+    background-color: #FFFFFF;
+}
+
+.use-cases-section h2 {
+    font-size: 2.5rem;
+    color: #0047AB;
+    text-align: center;
+    margin-bottom: 70px;
+    font-weight: 600;
+}
+
+/* 卡片网格布局 */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+/* 单个卡片样式 */
+.use-case-card {
+    background: #FFFFFF;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 71, 171, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.use-case-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 71, 171, 0.15);
+}
+
+/* 卡片图标样式 */
+.card-icon {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.use-case-card h3 {
+    font-size: 1.4rem;
+    color: #0047AB;
+    margin-bottom: 20px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.use-case-card p {
+    color: #666;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+/* Section 4: 技术优势样式 */
+.features-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #0047AB 0%, #003d96 100%);
+    color: white;
+}
+
+.features-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+
+.features-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.features-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    opacity: 0.95;
+}
+
+/* Section 5: CTA和邮件订阅样式 */
+.cta-section {
+    padding: 100px 0;
+    background-color: #F5F5F5;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    color: #0047AB;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.cta-section > p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto 50px;
+    line-height: 1.7;
+}
+
+/* 邮箱表单样式 */
+.email-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    gap: 0;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.form-group input[type="email"] {
+    flex: 1;
+    padding: 18px 25px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    background: transparent;
+}
+
+.form-group input[type="email"]::placeholder {
+    color: #999;
+}
+
+.form-group button {
+    background-color: #FFD700;
+    color: #0047AB;
+    border: none;
+    padding: 18px 35px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: #e6c200;
+}
+
+/* 隐私声明样式 */
+.privacy-notice {
+    margin-top: 15px;
+    color: #888;
+}
+
+/* 成功和错误消息样式 */
+.success-message, .error-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #c3e6cb;
+    max-width: 500px;
+    margin: 0 auto;
+    animation: slideIn 0.3s ease-out;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.success-message p, .error-message p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+/* 滑入动画 */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 响应式设计 - 平板设备 */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    /* 首屏区域响应式 */
+    .hero-section {
+        padding: 80px 0;
+        min-height: auto;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+        margin-bottom: 25px;
+    }
+    
+    .hero-section h2 {
+        font-size: 1.3rem;
+        margin-bottom: 35px;
+    }
+    
+    .feature-list li {
+        padding: 15px;
+        margin-bottom: 12px;
+    }
+    
+    /* Demo区域响应式 */
+    .demo-section {
+        padding: 80px 0;
+    }
+    
+    .demo-section h2 {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+    
+    .video-placeholder {
+        height: 300px;
+    }
+    
+    /* 应用场景响应式 */
+    .use-cases-section {
+        padding: 80px 0;
+    }
+    
+    .use-cases-section h2 {
+        font-size: 2rem;
+        margin-bottom: 50px;
+    }
+    
+    .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .use-case-card {
+        padding: 30px 25px;
+    }
+    
+    /* 技术优势响应式 */
+    .features-section {
+        padding: 80px 0;
+    }
+    
+    .features-section h2 {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+    
+    .features-content p {
+        font-size: 1.1rem;
+        margin-bottom: 25px;
+    }
+    
+    /* CTA区域响应式 */
+    .cta-section {
+        padding: 80px 0;
+    }
+    
+    .cta-section h2 {
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+    
+    .cta-section > p {
+        font-size: 1.1rem;
+        margin-bottom: 40px;
+    }
+}
+
+/* 响应式设计 - 手机设备 */
+@media (max-width: 480px) {
+    /* 首屏区域手机响应式 */
+    .hero-section h1 {
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+    
+    .hero-section h2 {
+        font-size: 1.1rem;
+    }
+    
+    .feature-list {
+        text-align: center;
+    }
+    
+    .cta-button {
+        padding: 15px 30px;
+        font-size: 1rem;
+    }
+    
+    /* Demo区域手机响应式 */
+    .demo-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .video-placeholder {
+        height: 250px;
+    }
+    
+    .demo-description {
+        font-size: 1rem;
+    }
+    
+    /* 应用场景手机响应式 */
+    .use-cases-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .use-case-card {
+        padding: 25px 20px;
+    }
+    
+    .use-case-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    /* 技术优势手机响应式 */
+    .features-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .features-content p {
+        font-size: 1rem;
+    }
+    
+    /* CTA区域手机响应式 */
+    .cta-section h2 {
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+    
+    .cta-section > p {
+        font-size: 1rem;
+    }
+    
+    /* 表单手机响应式 */
+    .form-group {
+        flex-direction: column;
+        border-radius: 15px;
+    }
+    
+    .form-group input[type="email"] {
+        border-radius: 15px 15px 0 0;
+        padding: 15px 20px;
+    }
+    
+    .form-group button {
+        border-radius: 0 0 15px 15px;
+        padding: 15px 25px;
+    }
+}
+
+/* 平滑滚动效果 */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 加载动画效果 */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 为各个section添加进入动画 */
+.hero-section,
+.demo-section,
+.use-cases-section,
+.features-section,
+.cta-section {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* 焦点状态样式优化 */
+.cta-button:focus,
+.form-group input:focus,
+.form-group button:focus {
+    outline: 2px solid #FFD700;
+    outline-offset: 2px;
+}
+
+/* 打印样式优化 */
+@media print {
+    .hero-section,
+    .demo-section,
+    .features-section,
+    .cta-section {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .cta-button,
+    .email-form {
+        display: none;
+    }
+}

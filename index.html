@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO优化：页面标题包含核心关键词 -->
+    <title>LangExtract - Unstructured Information Extraction | Google Open-Source Text Extraction Library</title>
+    <!-- SEO优化：元描述包含核心关键词 -->
+    <meta name="description" content="Transform unstructured text into actionable data with LangExtract. Python text processing library for structured data extraction, long document summarization, and smart text analysis.">
+    <!-- SEO优化：关键词标签 -->
+    <meta name="keywords" content="LangExtract, unstructured information extraction, structured data extraction, Google open-source text extraction, Python text processing, long document summarization">
+    
+    <!-- Google Fonts引入 -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- 样式文件引入 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Section 1: 首屏区域 (Hero Section) -->
+    <section class="hero-section">
+        <div class="container">
+            <!-- 主标题使用H1标签，包含核心关键词 -->
+            <h1>LangExtract - Transform Unstructured Text into Actionable Data with a Google Open-Source Library</h1>
+            
+            <!-- 副标题使用H2标签 -->
+            <h2>Stop the manual grind. Our smart text information extraction tool helps you instantly grasp the core of long documents.</h2>
+            
+            <!-- 核心功能点列表 -->
+            <ul class="feature-list">
+                <li>
+                    <strong>Accurate Extraction:</strong> Effortlessly extract key information from any document.
+                </li>
+                <li>
+                    <strong>Long Text Optimized:</strong> Designed for massive documents, with superior speed and efficiency.
+                </li>
+                <li>
+                    <strong>Source Highlighting:</strong> Every extracted detail links back to its source, ensuring precision.
+                </li>
+            </ul>
+            
+            <!-- CTA按钮 -->
+            <a href="#demo-section" class="cta-button">Watch Demo Video Now</a>
+        </div>
+    </section>
+
+    <!-- Section 2: Demo演示区域 (Video Section) -->
+    <section id="demo-section" class="demo-section">
+        <div class="container">
+            <!-- 演示区域标题 -->
+            <h2>See the power of unstructured information extraction for yourself</h2>
+            
+            <!-- 交互式演示容器 -->
+            <div class="demo-container">
+                <!-- 演示界面 -->
+                <div class="langextract-demo">
+                    <!-- 高亮图例 -->
+                    <div class="highlights-legend">
+                        <span class="legend-title">Highlights Legend:</span>
+                        <span class="legend-item character">character</span>
+                        <span class="legend-item emotion">emotion</span>
+                        <span class="legend-item relationship">relationship</span>
+                    </div>
+                    
+                    <!-- 提取信息显示 -->
+                    <div class="extraction-info">
+                        <div class="extraction-class">class: relationship</div>
+                        <div class="extraction-attributes">
+                            attributes: {<span class="attr-key">type:</span> romantic longing, <span class="attr-key">character_1:</span> Lady Juliet, <span class="attr-key">character_2:</span> Romeo}
+                        </div>
+                    </div>
+                    
+                    <!-- 文本内容区域 -->
+                    <div class="text-content">
+                        <span class="character-highlight">Lady Juliet</span> 
+                        <span class="emotion-highlight">gazed longingly</span> 
+                        at the stars, 
+                        <span class="relationship-highlight">her heart aching for Romeo</span>
+                    </div>
+                    
+                    <!-- 控制按钮 -->
+                    <div class="demo-controls">
+                        <button class="control-btn pause-btn">⏸️ Pause</button>
+                        <button class="control-btn prev-btn">⏮️ Previous</button>
+                        <button class="control-btn next-btn">⏭️ Next</button>
+                    </div>
+                    
+                    <!-- 进度条 -->
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                            <div class="progress-indicator"></div>
+                        </div>
+                        <div class="progress-text">Entity 3/3 | Pos [42-68]</div>
+                    </div>
+                </div>
+                
+                <!-- 演示说明 -->
+                <div class="demo-note">
+                    <strong>Note on LLM Knowledge Utilization:</strong> This example demonstrates extractions that stay close to the text evidence 
+                    - extracting "longing" for Lady Juliet's emotional <span class="highlight-word">state</span> and identifying "yearning" from 
+                    "gazed longingly at the stars." The task could be modified to generate attributes that draw more heavily from the LLM's world 
+                    knowledge (e.g., adding <span class="code-snippet">"identity": "Capulet family daughter"</span> or 
+                    <span class="code-snippet">"literary_context": "tragic heroine"</span>). 
+                    The balance between text-evidence and knowledge-inference is controlled by your prompt instructions and example attributes.
+                </div>
+            </div>
+            
+            <!-- 视频说明文案 -->
+            <p class="demo-description">
+                This demo showcases our long document summarization and structured data extraction capabilities. 
+                The highlighted parts in the video are the key entities identified by our AI, such as contract values, 
+                effective dates, and company names. This drastically simplifies data organization.
+            </p>
+        </div>
+    </section>
+
+    <!-- Section 3: 应用场景 (Use Cases Section) -->
+    <section class="use-cases-section">
+        <div class="container">
+            <h2>Transform Your Workflow Across Industries</h2>
+            
+            <div class="cards-grid">
+                <!-- 卡片一：法律法务 -->
+                <div class="use-case-card">
+                    <div class="card-icon">
+                        <!-- SVG图标：法律天平 -->
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" fill="#FFD700"/>
+                            <path d="M7 12C7 14.21 5.21 16 3 16C0.79 16 -1 14.21 -1 12C-1 9.79 0.79 8 3 8C5.21 8 7 9.79 7 12Z" stroke="#0047AB" stroke-width="2"/>
+                            <path d="M25 12C25 14.21 23.21 16 21 16C18.79 16 17 14.21 17 12C17 9.79 18.79 8 21 8C23.21 8 25 9.79 25 12Z" stroke="#0047AB" stroke-width="2"/>
+                            <line x1="3" y1="8" x2="12" y2="2" stroke="#0047AB" stroke-width="2"/>
+                            <line x1="21" y1="8" x2="12" y2="2" stroke="#0047AB" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Streamline Legal Work with Contract Clause Extraction</h3>
+                    <p>
+                        Legal professionals spend countless hours on contracts, judgments, and regulations. 
+                        Our tool automates the extraction of key clauses, parties, dates, and amounts, 
+                        dramatically reducing manual review time and improving accuracy. Using our Python text processing technology, 
+                        you can easily manage complex legal documents.
+                    </p>
+                </div>
+
+                <!-- 卡片二：金融研究 -->
+                <div class="use-case-card">
+                    <div class="card-icon">
+                        <!-- SVG图标：图表分析 -->
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 3V21H21" stroke="#0047AB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 9L12 6L16 10L20 6" stroke="#FFD700" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="9" cy="9" r="2" fill="#FFD700"/>
+                            <circle cx="12" cy="6" r="2" fill="#FFD700"/>
+                            <circle cx="16" cy="10" r="2" fill="#FFD700"/>
+                            <circle cx="20" cy="6" r="2" fill="#FFD700"/>
+                        </svg>
+                    </div>
+                    <h3>Analyze Research Reports with Research Report Data Analysis</h3>
+                    <p>
+                        Financial analysts must sift through thousands of reports for key data and insights. 
+                        Our tool precisely extracts company financials, analyst opinions, and market forecasts into structured reports. 
+                        This makes text information extraction a competitive advantage, not a chore.
+                    </p>
+                </div>
+
+                <!-- 卡片三：人力资源 -->
+                <div class="use-case-card">
+                    <div class="card-icon">
+                        <!-- SVG图标：人员管理 -->
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z" fill="#FFD700"/>
+                            <path d="M12 14C8.13401 14 5 17.134 5 21H19C19 17.134 15.866 14 12 14Z" fill="#0047AB"/>
+                            <circle cx="18" cy="8" r="3" stroke="#FFD700" stroke-width="2" fill="none"/>
+                            <circle cx="6" cy="8" r="3" stroke="#FFD700" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3>Smart Recruitment with Job Description Parsing</h3>
+                    <p>
+                        HR recruiters handle endless job descriptions and resumes. 
+                        Our platform automatically extracts job titles, salary ranges, locations, and qualifications, 
+                        standardizing the data for easy management. Our unstructured information extraction solution makes recruitment smarter.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: 技术优势 (Features Section) -->
+    <section class="features-section">
+        <div class="container">
+            <h2>Powerful & Efficient, Powered by Google's Open-Source LangExtract</h2>
+            
+            <div class="features-content">
+                <p>
+                    Our platform is built on the robust Google open-source text extraction library, LangExtract. 
+                    This provides us with a solid technical foundation and ongoing community support. 
+                    We understand the challenge of how to extract key information from long documents, 
+                    which is why our solution excels at processing large-scale, unstructured data.
+                </p>
+                
+                <p>
+                    Unlike other solutions, we have optimized our platform specifically for complex long documents, 
+                    ensuring high recall and precision. We are not just a tool; we are your professional assistant 
+                    for solving the problem of how to structure unstructured data.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: CTA & 邮件订阅 (Call to Action Section) -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Still asking, "Is there a good Python text extraction library?" We are the answer.</h2>
+            
+            <p>
+                We are inviting the first users to our private beta. Leave your email to get early access, 
+                exclusive feature previews, and launch announcements. Let's start a new era of unstructured information extraction together.
+            </p>
+            
+            <!-- 邮箱收集表单 -->
+            <form class="email-form" id="emailForm">
+                <div class="form-group">
+                    <input type="email" id="emailInput" placeholder="Enter your email..." required>
+                    <button type="submit">Subscribe Now</button>
+                </div>
+                <p class="privacy-notice">
+                    <small>We respect your privacy. Your email will be stored locally and never shared with third parties.</small>
+                </p>
+            </form>
+            
+            <!-- 成功提示消息 -->
+            <div class="success-message" id="successMessage" style="display: none;">
+                <p>✅ Thank you for subscribing! We'll keep you updated on our progress.</p>
+            </div>
+            
+            <!-- 错误提示消息 -->
+            <div class="error-message" id="errorMessage" style="display: none;">
+                <p>⚠️ This email is already subscribed. Thank you for your interest!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript for form handling -->
+    <script>
+        // 简单的表单处理，使用本地存储保护隐私
+        document.getElementById('emailForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const emailInput = document.getElementById('emailInput');
+            const email = emailInput.value.trim();
+            const submitButton = e.target.querySelector('button[type="submit"]');
+            
+            if (email) {
+                // 显示加载状态
+                const originalText = submitButton.textContent;
+                submitButton.textContent = 'Subscribing...';
+                submitButton.disabled = true;
+                
+                // 模拟网络延迟
+                setTimeout(() => {
+                    // 将邮箱存储到本地存储（保护隐私）
+                    const subscribers = JSON.parse(localStorage.getItem('langextract_subscribers') || '[]');
+                    
+                    // 检查是否已经订阅
+                    if (subscribers.includes(email)) {
+                        // 显示错误消息 - 邮箱已存在
+                        showMessage('error', 'This email is already subscribed. Thank you for your interest!');
+                    } else {
+                        // 添加新邮箱
+                        subscribers.push(email);
+                        localStorage.setItem('langextract_subscribers', JSON.stringify(subscribers));
+                        
+                        // 显示成功消息
+                        showMessage('success', 'Thank you for subscribing! We\'ll keep you updated on our progress.');
+                        emailInput.value = '';
+                    }
+                    
+                    // 恢复按钮状态
+                    submitButton.textContent = originalText;
+                    submitButton.disabled = false;
+                }, 800);
+            }
+        });
+        
+        // 显示消息的通用函数
+        function showMessage(type, message) {
+            // 隐藏所有消息
+            document.getElementById('successMessage').style.display = 'none';
+            document.getElementById('errorMessage').style.display = 'none';
+            
+            if (type === 'success') {
+                const successMsg = document.getElementById('successMessage');
+                successMsg.querySelector('p').textContent = '✅ ' + message;
+                successMsg.style.display = 'block';
+                
+                // 3秒后隐藏成功消息
+                setTimeout(() => {
+                    successMsg.style.display = 'none';
+                }, 3000);
+            } else if (type === 'error') {
+                const errorMsg = document.getElementById('errorMessage');
+                errorMsg.querySelector('p').textContent = '⚠️ ' + message;
+                errorMsg.style.display = 'block';
+                
+                // 3秒后隐藏错误消息
+                setTimeout(() => {
+                    errorMsg.style.display = 'none';
+                }, 3000);
+            }
+        }
+        
+        // 邮箱格式验证
+        document.getElementById('emailInput').addEventListener('input', function(e) {
+            const email = e.target.value;
+            const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+            
+            if (email && !isValid) {
+                e.target.style.borderColor = '#dc3545';
+            } else {
+                e.target.style.borderColor = '#ddd';
+            }
+        });
+    </script>
+</body>
+</html>
