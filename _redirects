@@ -1,0 +1,9 @@
+# 404页面重定向到首页
+/* /index.html 200
+
+# API路径重定向（如果将来需要）
+/api/* https://api.langextract.com/:splat 200
+
+# 旧路径重定向
+/home /index.html 301
+/landing /index.html 301
