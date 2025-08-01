@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+    
+    <!-- 首页 -->
+    <url>
+        <loc>https://www.langextract.info/</loc>
+        <lastmod>2025-01-31</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- 演示页面锚点 -->
+    <url>
+        <loc>https://www.langextract.info/#demo-section</loc>
+        <lastmod>2025-01-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- 应用场景页面锚点 -->
+    <url>
+        <loc>https://www.langextract.info/#use-cases</loc>
+        <lastmod>2025-01-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- 技术特性页面锚点 -->
+    <url>
+        <loc>https://www.langextract.info/#features</loc>
+        <lastmod>2025-01-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- 订阅页面锚点 -->
+    <url>
+        <loc>https://www.langextract.info/#subscribe</loc>
+        <lastmod>2025-01-31</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+</urlset>
